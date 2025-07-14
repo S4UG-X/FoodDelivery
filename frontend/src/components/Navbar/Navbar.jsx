@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
-import images from "../../assets/asset"
-const Navbar = () => {
+import React, { useState } from "react";
+import images from "../../assets/asset";
 
-  const [menu, setMenu]= useState("")
+import { Link } from "react-router-dom";
+
+const Navbar = () => {
+  const [menu, setMenu] = useState("");
 
   return (
     <div className="px-5 flex justify-between items-center   ">
@@ -14,12 +16,14 @@ const Navbar = () => {
         >
           Home
         </li>
+
         <li
           onMouseOver={() => setMenu("menu")}
           className={menu === "menu" ? "underline" : ""}
         >
           menu
         </li>
+
         <li
           onMouseOver={() => setMenu("mobile-app")}
           className={menu === "mobile-app" ? "underline" : ""}
@@ -48,6 +52,6 @@ const Navbar = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Navbar
+export default Navbar;

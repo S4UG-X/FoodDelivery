@@ -1,0 +1,55 @@
+React Router is used to enable navigation between different pages or components in a React app without reloading the page, 
+allowing for a seamless single-page application (SPA) experience.
+
+so for that npm i react-router-dom 
+ 
+ Then in main.jsx, we do this in main.jsx so that whole react app can use routing.
+
+ //createBrowserRouter is used to define and configure routes in React Router v6+, enabling you to map URL paths to React components for client-side navigation in a single-page application.
+ //RouterProvider is used to supply your router configuration (created with createBrowserRouter) to your React app, enabling navigation and route matching. It must wrap your app to activate routing.
+ 
+ import  {createBrowserRouter, RouterProvider} from 'react-router-dom'
+
+ Then in the same file
+
+ const router = ()=>{[
+     {
+        path: "/",
+        element: <Home/>  //this is the component that you have to import first in this same file.
+
+     },
+    {}
+ ] 
+ }
+ return (
+
+    <RouterProvider router={router}/>
+ )
+//import the Navbar here in App.jsx
+
+
+in Navbar.jsx
+
+instead of using anchor tag, use
+
+import { Link } from "react-router-dom";
+
+
+<Link to="/home"> <li> Home</li> </Link>
+<Link to="/about"> <li> About</li> </Link>
+
+
+Now for the params in the href like  "/user/:userId"
+
+then go to User.jsx
+ there 
+ import {useParams} from "react-router-dom"
+
+
+ then you do 
+ const params = useParams()
+
+ return(
+    {params.username}
+ )
+

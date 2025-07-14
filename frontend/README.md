@@ -12,3 +12,5 @@ created the navbar, first styled the middle then the right
 
 
 # Cart
+
+for that learn react route: to go to different pages/components without reloding the page

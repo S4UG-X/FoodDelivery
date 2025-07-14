@@ -2,7 +2,10 @@ import React from 'react'
 
 const Cart = () => {
   return (
-    <div>Cart</div>
+    <div>Cart
+      This is cart
+    </div>
+
   )
 }
 
