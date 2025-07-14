@@ -14,3 +14,11 @@ created the navbar, first styled the middle then the right
 # Cart
 
 for that learn react route: to go to different pages/components without reloding the page
+
+# Header file
+create the header file. 
+
+# Menu section
+
+we created the basic menu and 
+then Now we are going to make this: when we click on the menu items then that menu will be bordered-red. 
