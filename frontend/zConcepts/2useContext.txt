@@ -1,0 +1,29 @@
+to prevent the props drilling, we use useContext hook. 
+Basically, we use this to make the props value global, so that it could be accessed by any components.
+
+first, we have to create another folder named, contexts and there create context.js file and there 
+import { createContext } from 'react';
+export const variable_name (let say: counterContext) = createContext(initial_value)
+
+now, we go to the file where we have to make the props global, lets say its in APP.jsx
+
+//import the context.js file
+then,
+
+<counterContext.Provider value={counter}>   //counter is the state variable
+
+//inside of this pull all the components name, where this global props will be used, and to send the value we pass the props
+
+ </counterContext.Provider>
+
+
+ Now go to the compontnt where you want to use it.
+  there import:
+  import {useContext} from 'react'
+  //also import the counterContext
+  and in the function (i.e. before return())
+  const variable_name = useContext(counterContext)
+
+
+  //Now variable_name is your props
+

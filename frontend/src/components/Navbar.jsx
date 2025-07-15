@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import images from "../../assets/asset";
+import images from "./../assets/asset";
 
 import { Link } from "react-router-dom";
 
@@ -40,7 +40,7 @@ const Navbar = () => {
       <div className="flex items-center gap-10">
         <i className="fas fa-search"></i>
         <div className="relative">
-          <i class="fa-solid fa-basket-shopping"></i>
+          <i className="fa-solid fa-basket-shopping"></i>
           <div className="absolute min-h-[10px] min-w-[10px] bg-red-400 rounded -top-2 -right-2"></div>
         </div>
         <button

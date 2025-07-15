@@ -1,5 +1,5 @@
 import React from 'react'
-import { menu_list } from '../../assets/asset'
+import { menu_list } from '../assets/asset'
 const ExpressMenu = ({category, setCategory}) => {
   return (
     <div className="flex flex-col gap-4">
