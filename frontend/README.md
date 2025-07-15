@@ -26,4 +26,10 @@ then Now we are going to make this: when we click on the menu items then that me
 
 Now i have to add the state variable to add the add button. i.e. hOw many order of a menu
 
-1.30.35
+Menu items: here we make buttons so the user will press multiple times
+
+# filtering
+
+when i click on the menu (not menuItems) then the menuItems will be filtered.
+
+1.43.23

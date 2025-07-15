@@ -10,7 +10,7 @@ const ExpressMenu = ({category, setCategory}) => {
         perferendis rerum doloremque ad repellendus fugit inventore deserunt
         quaerat. Ab deleniti sit repellat earum ut fugit illum deserunt iure
         quibusdam quam.
-      </p>
+      </p> 
 
       <div className="gap-8 text-center flex justify-start items-center overflow-x-scroll no-scrollbar ">
         {menu_list.map((item, index) => (

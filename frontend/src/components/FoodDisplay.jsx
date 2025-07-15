@@ -13,8 +13,9 @@ const FoodDisplay = ({category}) => {
 
       <div className="grid grid-cols-[repeat(auto-fill,_minmax(240px,_1fr))] gap-8 gap-x-12 mt-8">
         {" "}
-        {food_list.map((item, index) => (
-          <FoodItem
+        {food_list.map((item, index) => {
+          if(category==="All" || category===item.category) {
+           return <FoodItem
             key={index}
             id={item._id}
             name={item.name}
@@ -22,7 +23,8 @@ const FoodDisplay = ({category}) => {
             price={item.price}
             image={item.image}
           />
-        ))}
+          }
+})}
       </div>
     </div>
   );
