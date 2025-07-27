@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 const Header = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
 
       <div
         style={{ margin: "30px auto", padding: "0px" }}
