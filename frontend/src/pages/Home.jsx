@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Header from '../components/Header'
 import ExpressMenu from '../components/ExpressMenu'
 import FoodDisplay from '../components/FoodDisplay'
+import AppDownload from '../components/AppDownload'
 
 const Home = () => {
 
@@ -11,7 +12,8 @@ const Home = () => {
       <Header />
       <ExpressMenu category={category} setCategory={setCategory} />
       <FoodDisplay category={category} />
-    </div>
+      <AppDownload/>
+    </div> 
   );
 }
 

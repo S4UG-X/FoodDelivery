@@ -1,6 +1,7 @@
 
 import './App.css'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer.jsx'
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Cart from './pages/Cart.jsx';
@@ -39,7 +40,6 @@ const router = createBrowserRouter([
     path: "/", // 👈 Add this
     element: (
       <>
-      
         <Home />
       </>
     ),
@@ -48,7 +48,7 @@ const router = createBrowserRouter([
     path: "/home",
     element: (
       <>
-        <Navbar />
+       
         <Home />
       </>
     ),
@@ -57,7 +57,7 @@ const router = createBrowserRouter([
     path: "/cart",
     element: (
       <>
-        <Navbar />
+        
         <Cart />
       </>
     ),
@@ -66,7 +66,7 @@ const router = createBrowserRouter([
     path: "/order",
     element: (
       <>
-        <Navbar />
+        
         <PlaceOrder />
       </>
     ),
@@ -75,15 +75,15 @@ const router = createBrowserRouter([
 
   
   return (
-    <StoreContext.Provider value={contextValue} > 
-
-    <div className="app">
-      {/* <Navbar /> */}
-  
-      <RouterProvider router={router} />;
-    </div>
+    <StoreContext.Provider value={contextValue}>
+      <div className="app">
+        {/* <Navbar /> */}
+        <Navbar />
+        <RouterProvider router={router} />;
+      </div>
+        <Footer />
     </StoreContext.Provider>
-  );
+  )
 }
 
 export default App

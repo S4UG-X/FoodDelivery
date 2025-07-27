@@ -53,7 +53,7 @@ const FoodItem = ({ id, name, description, price, image }) => {
         <p className="text-red-400 text-xl font-medium mt-2.5">${price} </p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default FoodItem;
+export default FoodItem

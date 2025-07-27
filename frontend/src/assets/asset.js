@@ -10,10 +10,15 @@ import menu_6 from "./menu_1.png";
 import menu_7 from "./menu_1.png";
 import menu_8 from "./menu_1.png";
 import food from "./menu_1.png";
+import appStore from "./appStore.png";
+import googleStore from "./googleStore.png";
 
 const images = {
   zomato,
   ratings,
+  appStore,
+  googleStore,
+  
 };
 
 export const menu_list = [

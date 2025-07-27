@@ -1,4 +1,4 @@
-@import "tailwindcss";
+
 
 .imgMenu {
     @apply h-[7vw] w-[7vw] rounded-[50%] object-contain object-center
