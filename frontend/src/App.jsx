@@ -34,6 +34,7 @@ const removeFromCart = (itemId) => {
     addToCart,
     removeFromCart,
   };
+  //This is hte change
 
 const router = createBrowserRouter([
   {
