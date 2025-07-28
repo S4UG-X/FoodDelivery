@@ -10,6 +10,7 @@ import PlaceOrder from "./pages/PlaceOrder.jsx";
 import { StoreContext } from './context/StoreContext';
 import { food_list } from './assets/asset';
 import { useState } from 'react';
+import LoginPopup from './components/LoginPopup.jsx';
 
 function App() {
 
@@ -74,12 +75,15 @@ const router = createBrowserRouter([
   },
 ]);
 
+const [showLogin, setShowLogin] = useState(false)
   
   return (
-    <StoreContext.Provider value={contextValue}>
+
+    <StoreContext.Provider value={contextValue} >
+      {showLogin? <LoginPopup setShowLogin={setShowLogin}/> : <></>}
       <div className="app">
         {/* <Navbar /> */}
-        <Navbar />
+        <Navbar setShowLogin={setShowLogin} />
         <RouterProvider router={router} />;
       </div>
         <Footer />

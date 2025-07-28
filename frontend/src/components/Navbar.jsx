@@ -3,7 +3,7 @@ import images from "./../assets/asset";
 
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({setShowLogin}) => {
   const [menu, setMenu] = useState("");
 
   return (
@@ -43,7 +43,7 @@ const Navbar = () => {
           <i className="fa-solid fa-basket-shopping"></i>
           <div className="absolute min-h-[10px] min-w-[10px] bg-red-400 rounded -top-2 -right-2"></div>
         </div>
-        <button
+        <button onClick={()=>setShowLogin(true)}
           style={{ padding: "8px 18px" }}
           className="bg-transparent text-[#49557e] text-[18px] border border-solid border-red-300  rounded-[48px] cursor-pointer hover:bg-[#fff4f2] transition duration-300"
         >

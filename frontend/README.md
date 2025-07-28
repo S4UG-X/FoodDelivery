@@ -39,3 +39,12 @@ when i click on the menu (not menuItems) then the menuItems will be filtered.
 
 
 # App Download section
+
+here we made a section to downlaod the app. 
+
+# Making app responsive
+while developing an app. you have to build app as in the mobiles and then you have to increase the width for bigger screens.
+ while build it from the sctract build it with making it responsive.
+
+ # Login Popup
+ 
